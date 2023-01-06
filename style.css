@@ -1,0 +1,156 @@
+/* 
+  body tag style
+  set image as background
+*/
+body {
+  padding: 20px;
+  background: url("images/background.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+  error alert element
+  with red background and rounded corners
+  only visible when there is an error
+*/
+.alert {
+  visibility: hidden;
+  width: 400px;
+  margin: auto;
+  height: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 10px;
+}
+
+/*
+  container of main card and search card
+  grid display to show cards in center with gap of 80 pixels
+*/
+.container {
+  margin-top: 80px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 80px;
+  grid-auto-flow: column;
+}
+
+/* 
+  main card is the card with information about user
+  uses lucid background and double border and rounded corners
+*/
+.main-card {
+  width: 600px;
+  height: 325px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: thick double black;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+}
+
+/* 
+  search is the card with serch box and submit button
+  uses lucid background and double border and rounded corners
+*/
+.search-card {
+  padding: 10px;
+  width: 250px;
+  height: 350px;
+  border: thick double black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 80px;
+  grid-auto-flow: row;
+}
+
+/*
+  style to add padding to element
+*/
+.p-10 {
+  padding: 10px;
+}
+
+/*
+  profile image element style
+  circle shape with size of 150x150
+*/
+.profile {
+  display: inline;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*
+  container of profile photo and info on the right side of profile
+*/
+.photo-info {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  gap: 20px;
+  grid-auto-flow: column;
+}
+
+/*
+  container of user info except bio
+*/
+.info {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding-left: 30px;
+  grid-auto-flow: row;
+}
+
+/*
+  class to set text size to 18
+*/
+.text-18{
+  font-size: 18;
+}
+
+/*
+ user bio element
+*/
+.bio {
+  margin-top: 30px;
+}
+
+/*
+  icon and info pair (location and blog)
+*/
+.info-pair {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  gap: 10px;
+  grid-auto-flow: column;
+}
+
+/*
+  icon style
+*/
+.icon {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
+/*
+  set text color to black for blog link
+*/
+#blog{
+  color: black;
+}
